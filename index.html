@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Omran — Portfolio</title>
+  <meta name="description" content="Bilingual Operations & Customer Support Professional | AI Language Evaluation | Egyptian Arabic Voice">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">ABDULLAH OMRAN</div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Progress bar -->
+  <div id="progress"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#hero" class="nav-logo">AO<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#extras">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="dot"></span> Available for work</div>
+        <h1 class="hero-name" id="heroName"></h1>
+        <p class="hero-tagline" id="heroTagline"></p>
+        <p class="hero-loc" id="heroLoc"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-gold">View My Work ↓</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-social">
+          <a id="liLinkedin" href="#" target="_blank" title="LinkedIn">in</a>
+          <a id="liGithub" href="#" target="_blank" title="GitHub">GH</a>
+          <a href="mailto:abdullahomran.work@gmail.com" title="Email">@</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-ring">
+          <img src="assets/profile.jpg" alt="Abdullah Omran" class="hero-photo">
+        </div>
+        <div class="float-card fc-1"><strong>5+ Years</strong>Experience</div>
+        <div class="float-card fc-2"><strong>AR / EN</strong>Bilingual</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-tag reveal">Who I Am</div>
+      <h2 class="section-title reveal">About <span class="gold">Me</span></h2>
+      <div class="about-grid" style="margin-top:40px">
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-frame"></div>
+          <img src="assets/about.jpg" alt="Abdullah Omran" class="about-photo">
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <div id="aboutText"></div>
+          <div class="stats-row" id="statsRow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-tag reveal">What I Do</div>
+      <h2 class="section-title reveal">Core <span class="gold">Skills</span></h2>
+      <p class="section-sub reveal">A versatile skill set built across operations, customer support, AI language work, and voice performance.</p>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-tag reveal">My Journey</div>
+      <h2 class="section-title reveal">Work <span class="gold">Experience</span></h2>
+      <p class="section-sub reveal">~5 years across recruitment, administration, and customer-facing roles.</p>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-tag reveal">My Work</div>
+      <h2 class="section-title reveal">Featured <span class="gold">Projects</span></h2>
+      <p class="section-sub reveal">Selected work across AI evaluation, voice, operations, and data. New projects are added regularly.</p>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Volunteer -->
+  <section id="volunteer">
+    <div class="section-inner">
+      <div class="section-tag reveal">Beyond Work</div>
+      <h2 class="section-title reveal">Volunteer <span class="gold">Experience</span></h2>
+      <p class="section-sub reveal">Giving back and building skills through community involvement.</p>
+      <div class="volunteer-grid" id="volunteerGrid"></div>
+    </div>
+  </section>
+
+  <!-- Education / Languages / Tools -->
+  <section id="extras">
+    <div class="section-inner">
+      <div class="section-tag reveal">Background</div>
+      <h2 class="section-title reveal">Education & <span class="gold">Languages</span></h2>
+      <div class="extras-grid" style="margin-top:40px">
+        <div class="reveal">
+          <h3 style="margin-bottom:24px;font-size:20px;color:var(--gold-light)">🗣️ Languages</h3>
+          <div id="langsBlock"></div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <h3 style="margin-bottom:24px;font-size:20px;color:var(--gold-light)">🧰 Tools & Software</h3>
+          <div class="tools-cloud" id="toolsCloud"></div>
+        </div>
+      </div>
+      <div class="edu-block reveal">
+        <h3>🎓 Education</h3>
+        <div class="school" id="eduSchool"></div>
+        <h3 style="font-size:17px;margin-bottom:12px" id="eduDegree"></h3>
+        <div id="certsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-card reveal">
+        <div class="contact-icon">🚀</div>
+        <h2 id="contactHeading"></h2>
+        <p id="contactText"></p>
+        <div class="contact-links">
+          <a class="contact-link" id="clEmail" href="#">
+            <span class="ci">✉️</span><span id="clEmailText"></span><span class="cv">Email →</span>
+          </a>
+          <a class="contact-link" id="clLinkedin" href="#" target="_blank">
+            <span class="ci">💼</span><span>LinkedIn</span><span class="cv">Connect →</span>
+          </a>
+          <a class="contact-link" id="clWhatsapp" href="#" target="_blank">
+            <span class="ci">💬</span><span id="clPhoneText"></span><span class="cv">WhatsApp →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Abdullah Omran · Built with <span class="heart">♥</span> and lots of ☕</p>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
